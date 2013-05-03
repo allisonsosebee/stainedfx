@@ -12,10 +12,10 @@
   <header>
        <h1> STAINED FX</h1>
     <nav>
-    <!----------------------Needs to be converted to <a id>---------------------->
-       <ul>
-          <li><a href="contact.html">contact</a></li>
-          <li><a href="about.html">about</a></li>
+    <!-- Needs to be converted to <a id> -->
+       <ul id="navbar">
+          <li><a href="index.html">contact</a></li>
+          <li><a href="index.html">about</a></li>
           <li><a href="index.html">home</a></li>
        </ul>
     </nav>
@@ -37,24 +37,14 @@
   <section>
     <table class="photos">
           <tr>
-              <td><img src="images/brick.jpg" width=160 height=120 alt= "Brick Option"/></td>
-              <td><img src="images/diamond.jpg" width=160 height=120 alt= "Diamond Option"/></td>
+              <td><a href="images/brick.jpg" title="Brick Option"><img src="images/brick.jpg" width=160 height=120 alt= "Brick Option"/></td>
+              <td><a href="images/diamond.jpg" title="Diamond Option"><img src="images/diamond.jpg" width=160 height=120 alt= "Diamond Option"/></td>
           </tr>
           <tr>
-              <td><img src="images/hardwood.jpg" width=160 height=120 alt= "Hardwood Option"/></td>
-              <td><img src="images/stonesquare.jpg" width=160 height=120 alt= "Stone Square Option"/></td>
+              <td><a href="images/hardwood.jpg" title="Hardwood Option"><img src="images/hardwood.jpg" width=160 height=120 alt= "Hardwood Option"/></td>
+              <td><a href="images/stonesquare.jpg" title="Stone Square Option"><img src="images/stonesquare.jpg" width=160 height=120 alt= "Stone Square Option"/></td>
           </tr>
     </table>
-  
-  <aside>
-        <ul>
-           <li>Stone</Li>
-           <li>Tile</Li>
-           <li>Hardwood</Li>
-           <li>Cobblestone</Li>
-           <li>And More</Li>
-        </ul>
-  </aside>
   </section>
 
 
@@ -99,30 +89,31 @@
            <td>Fort Worth, TX 76133</td>
        </tr>
 </table>
-   
+
+
 <form method="get" action="mailto:bradsosebee@sbcglobal.net">
        <div>
-           <label for="name_first">First Name</label>
+           <label for="name_first" class="fixedwidth">First Name</label>
            <input type="text" name="name_first" id="name_first"/>
        </div>
        
        <div>
-           <label for="name_last">Last Name</label>
+           <label for="name_last" class="fixedwidth">Last Name</label>
            <input type="text" name="name_last" id="name_last"/>
        </div>
        
        <div>
-           <label for="phone">Phone Number</label>
+           <label for="phone" class="fixedwidth">Phone Number</label>
            <input type="text" name="phone" id="phone"/>
        </div>
        
        <div>
-           <label for="email">Email</label>
+           <label for="email" class="fixedwidth">Email</label>
            <input type="text" name="email" id="email"/>
        </div>
        
        <div>
-           <label for="select">Select</label>
+           <label for="select" class="fixedwidth">Select</label>
        </div>
        
        <div>
@@ -136,7 +127,7 @@
        </div>
        
        <div>
-           <label for="message">Message</label>
+           <label for="message" class="fixedwidth">Message</label>
            <textarea rows="15" cols="50" name="message" id="message"></textarea>
        </div>
        
